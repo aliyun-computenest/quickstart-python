@@ -3,7 +3,7 @@ Service:
   DeployType: ros
   DeployMetadata:
     ServiceInstanceNameRule:
-      Prefix: python-
+      Prefix: Python-
     TemplateConfigs:
       - Name: 选择ECS实例（Linux）
         Url: 'ros_templates/template-select-ecs.yaml'
