@@ -41,12 +41,11 @@ Python运行环境需要对ECS、VPC等资源进行访问和创建操作，若�
 3. 系统兼容性：Alibaba Cloud Linux 3.2104 LTS/CentOS 7.7/CentOS 7.8/CentOS 7.9/Ubuntu 20.04/Ubuntu 22.04
 
 ### 操作步骤
-1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Docker%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
+1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Python%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83)，进入服务实例部署界面。
 2. 选择目标ECS实例，点击 下一步：确认订单。
     <img src="1.jpg" width="100%" align="bottom"/>
 3. 点击 立即创建，等待服务实例创建完成。服务实例创建成功后，进入服务实例详情页。在概览页可获取安装日志。 
     <img src="2.jpg" width="100%" align="bottom"/>
-
 
 
 ## 新建ECS实例部署
@@ -54,7 +53,7 @@ Python运行环境需要对ECS、VPC等资源进行访问和创建操作，若�
 新建ECS实例部署支持Linux操作系统。
 
 ### 操作步骤
-1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Docker%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
+1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Python%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83)，进入服务实例部署界面。
 2. 选择新建ECS实例并根据界面提示配置参数，配置完成后点击下一步：确认订单。
     <img src="3.jpg" width="100%" align="bottom"/>
 3. 点击立即创建，等待服务实例创建完成。服务实例创建成功后，进入服务实例资源页。
