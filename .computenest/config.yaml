@@ -1,16 +1,40 @@
 Service:
-  RegionId: cn-hangzhou
   DeployType: ros
   DeployMetadata:
-    ServiceInstanceNameRule:
-      Prefix: Python-
     TemplateConfigs:
       - Name: 选择ECS实例（Linux）
-        Url: 'ros_templates/template-select-ecs.yaml'
+        Url: ros_templates/template-select-ecs.yaml
+        PredefinedParameters: []
+        ArchitectureDiagramUrl: 
+          https://service-info-private.oss-cn-hangzhou.aliyuncs.com/1853370294850618/architecture/架构图.jpg
+        DeployScene: ECS
       - Name: 新建ECS实例
-        Url: 'ros_templates/template-create-ecs.yaml'
+        Url: ros_templates/template-create-ecs.yaml
+        PredefinedParameters: []
+        DeployScene: ECS
+    NetworkMetadata:
+      EnablePrivateVpcConnection: false
+      EnableReversePrivateVpcConnection: false
+    ServiceInstanceNameRule:
+      Prefix: python-
+      UseDefaultValue: false
+  OperationMetadata:
+    SupportBackup: false
+    PrometheusConfigMap:
+      选择ECS实例（Linux）:
+        EnablePrometheus: false
+      新建ECS实例:
+        EnablePrometheus: false
   ServiceType: private
   ServiceInfo:
-    Locale: zh-CN
-    ShortDescription: Python是一种广泛使用的高级编程语言。Python的设计哲学强调代码的可读性以及一种简单直接的语法，这使得它成为一种广受欢迎的初学者学习语言，同时也被许多专业开发者用于大型项目的开发。
-    Image: 'resources/icons/service_logo.png'
+    - Agreements: []
+      Image: resources/icons/service_logo_zh-CN.png
+      Locale: zh-CN
+      Name: Python运行环境
+      ShortDescription: Python是一种广泛使用的高级编程语言。Python的设计哲学强调代码的可读性以及一种简单直接的语法，这使得它成为一种广受欢迎的初学者学习语言，同时也被许多专业开发者用于大型项目的开发。
+      Softwares:
+        - Name: python
+          Version: ' 3.6.8'
+  ShareType: Public
+  ApprovalType: Manual
+Artifact: {}
