@@ -4,11 +4,10 @@ Service:
     SupplierDeployMetadata:
       SupplierTemplateConfigs:
         - Name: 选择ECS实例（Linux）
-          Url: 
-            https://service-info-private.oss-cn-hangzhou.aliyuncs.com/1853370294850618/template/5ff6c921-5eab-484e-ad82-cf0fb92be2c9.json
+          Url: ros_templates/template-select-ecs.yaml
           PredefinedParameters: []
         - Name: 新建ECS实例
-          Url: https://service-info-public.oss-cn-hangzhou.aliyuncs.com/1853370294850618/cn-hangzhou/template-create-ecsedbab72826d747d5b3f7.yaml
+          Url: ros_templates/template-create-ecs.yaml
           PredefinedParameters: []
     TemplateConfigs:
       - Name: 选择ECS实例（Linux）
